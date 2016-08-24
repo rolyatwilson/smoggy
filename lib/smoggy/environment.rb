@@ -10,10 +10,8 @@ module Smoggy
     end
 
     def load_secrets_from_yaml(path)
-      raise Errors::SECRETS_NOT_FOUND_ERROR unless File.exist?(path)
-
-      config_string = ERB.new(File.read(path))
-      @config = SafeYAML.load(config_string.result)
+      raise 'Secrets file not found' unless File.exist?(path)
+      @config = YAML.load_file(path)
       @config.deep_symbolize_keys!
     end
 
