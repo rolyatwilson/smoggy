@@ -2,7 +2,7 @@ require 'active_support/core_ext/hash/keys'
 require 'json'
 require 'net/http'
 require 'date'
-require 'safe_yaml'
+require 'yaml'
 
 require_relative 'smoggy/constants'
 require_relative 'smoggy/environment'
