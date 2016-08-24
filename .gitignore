@@ -1,0 +1,8 @@
+# RubyMine files
+.idea/**/*
+
+# Gem files
+Gemfile.lock
+
+# Secret Tokens and Stuff
+config/secrets_file.yml

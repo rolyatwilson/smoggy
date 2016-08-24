@@ -1,0 +1,11 @@
+require 'active_support/core_ext/hash/keys'
+require 'json'
+require 'net/http'
+require 'date'
+require 'safe_yaml'
+
+require_relative 'smoggy/constants'
+require_relative 'smoggy/environment'
+require_relative 'smoggy/coordinate'
+require_relative 'smoggy/bounding_box'
+require_relative 'smoggy/airnow'
