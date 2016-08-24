@@ -9,8 +9,8 @@ Smoggy is a ruby library for fetching air quality data from
 
 An API key is required to access the AirNow API. Getting an API key is
 easy. Just create an account at [AirNowAPI](https://docs.airnowapi.org/)
-and request an API key. Store the API key the *config/secrets_file.yml
-file or set the *ENV['AIRNOW_API_KEY'] variable.
+and request an API key. Store the API key the *config/secrets_file.yml*
+file or set the *ENV['AIRNOW_API_KEY']* variable.
 
 ## Setting the API key
     cp config/secrets_file.yml.example config/secrets_file.yml
