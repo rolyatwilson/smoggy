@@ -7,7 +7,7 @@ module Smoggy
     attr_accessor :parameters
 
     def initialize
-      @api_key     = Environment.new.fetch_token
+      @api_key     = Environment.new.token
       @base_url    = 'http://www.airnowapi.org'
       @data_format = 'format=application/json'
       @time_format = '%Y-%m-%dT%H'
