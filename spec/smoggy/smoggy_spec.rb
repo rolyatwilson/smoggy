@@ -24,7 +24,7 @@ module Smoggy
     end
 
     it 'gets data for zipcode' do
-      data = @air.aqi_with_zipcode('94937')
+      data = @air.aqi_with_zipcode('84124')
       expect(data).to be_a(Array)
       expect(data.length).to be > 0
     end

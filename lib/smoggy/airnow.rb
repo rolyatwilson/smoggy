@@ -14,9 +14,9 @@ module Smoggy
       @parameters  = default_parameters
     end
 
-    def aqi_with_bounding_box(bbox, start_date = DateTime.now - (1 / 24.0), end_date = DateTime.now)
-      raise 'expected a DateTime object' unless start_date.is_a?(DateTime)
-      raise 'expected a DateTime object' unless end_date.is_a?(DateTime)
+    def aqi_with_bounding_box(bbox, start_date = Time.now - (1 / 24.0), end_date = Time.now)
+      raise 'expected a DateTime object' unless start_date.is_a?(Time)
+      raise 'expected a DateTime object' unless end_date.is_a?(Time)
       start_date  = start_date.strftime(time_format)
       end_date    = end_date.strftime(time_format)
       date_range = "startDate=#{start_date}&endDate=#{end_date}"
